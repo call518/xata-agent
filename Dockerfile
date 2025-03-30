@@ -1,6 +1,10 @@
 # Use Node.js 22 as the base image
 FROM node:22-alpine AS base
 
+# Set temp environment variables
+ENV DATABASE_URL="postgresql://user:pass@localhost:5432/db"
+ENV OPENAI_API_KEY="dummy-api-key"
+
 # Install pnpm
 RUN corepack enable && corepack prepare pnpm@10.5.2 --activate
 

@@ -35,6 +35,8 @@ At the end:
 After you are finished, make a summary of your findings: the slow query summary (don't include the actual query unless it's short),
 the reason for which is slow, and the DDL to create the index if you found one. Also say what sort of improvement the user can expect
 from the index.
+
+(Required) Answers must be written in Korean.
 `;
 
 const GENERAL_MONITORING_PLAYBOOK = `
@@ -71,6 +73,8 @@ Document Findings:
 
 Record any issues found and actions taken.
 Note any recurring patterns or areas for improvement.
+
+(Required) Answers must be written in Korean.
 `;
 
 const TUNING_PLAYBOOK = `
@@ -106,6 +110,8 @@ Step 4:
 Now compare with the value you read via the tool getPerformanceAndVacuumSettings and see if there's anything you'd change.
 
 Report your findings in a structured way, with the settings you'd change, and the reason for the change. Highlight the most important changes first.
+
+(Required) Answers must be written in Korean.
 `;
 
 const INVESTIGATE_HIGH_CPU_USAGE_PLAYBOOK = `
@@ -139,6 +145,8 @@ If there are any unusual logs, report that to the user.
 Step 7:
 Based on all the information you have gathered, make a summary of your findings and report them to the user.
 Be very specific about the queries you found and the reason for which they are slow.
+
+(Required) Answers must be written in Korean.
 `;
 
 const INVESTIGATE_HIGH_CONNECTION_COUNT_PLAYBOOK = `
@@ -174,6 +182,8 @@ Provide actionable advice to the user. If for example you recommend killing old 
 provide the query to do so. However, use judgement in selecting only the connections that are least likely to
 impact users (for example, because they are very old).
 If you recommend changing the max_connections parameter, provide the new value.
+
+(Required) Answers must be written in Korean.
 `;
 
 const INVESTIGATE_LOW_MEMORY_PLAYBOOK = `
@@ -201,6 +211,8 @@ in order to free up memory.
 Step 6:
 If there is no clear root cause for using memory, suggest to the user to scale up the Postgres instance.
 Recommend a particular instance class.
+
+(Required) Answers must be written in Korean.
 `;
 
 export function getPlaybook(name: string): string {
