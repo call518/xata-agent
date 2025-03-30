@@ -20,6 +20,8 @@ services:
     env_file: '.env.production'
     ports:
       - '8080:8080'
+    volumes:
+      - ./apps/dbagent/src/lib/tools/playbooks.ts:/app/apps/dbagent/src/lib/tools/playbooks.ts
     depends_on:
       - postgres
 
